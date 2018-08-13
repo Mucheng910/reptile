@@ -23,7 +23,8 @@ var url="http://sports.sina.com.cn/nba/1.shtml";
 只能爬出来 网页的源代码
 此处需要一个npm 库
 [cheerio](https://www.npmjs.com/package/cheerio)
-######这是一个用正则来筛选信息的库
+
+这是一个用正则来筛选信息的库
 ```npm install cheerio```
 pc1.js 代码
 ```
@@ -52,7 +53,8 @@ var url="http://sports.sina.com.cn/nba/1.shtml";
 ```
 **运行:**
 ```node  pc.js```
-######能获取到网页的href标签内容
+
+能获取到网页的href标签内容
 pc2.js
 ```
 var http=require ("http");
@@ -95,4 +97,5 @@ httpGet(url,function (html) {
 ```
 **运行:**
 ```node  pc.js```
-###一个封装好的httpGet函数 并且用 node.js 里边的 fs.writeFile函数 将获取到的数据 放在一个new的文件夹中
+
+一个封装好的httpGet函数 并且用 node.js 里边的 fs.writeFile函数 将获取到的数据 放在一个new的文件夹中
